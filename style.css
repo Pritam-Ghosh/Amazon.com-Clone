@@ -190,9 +190,10 @@ right: 0;
 .products-slider .products ::-webkit-scrollbar{
     display: none;
 }
+/* i change it 13px to 30 */
 .product-slider-with-price{
     background: #fff;
-    margin: 0 13px;
+    margin: 0 30px;  
     padding: 20px;
     margin-bottom: 15px;
 
@@ -250,7 +251,20 @@ right: 0;
     font-weight: 400;
 }
 
+
+
+
+
+
+
+
+
+
+
 /* Footer from GPT */
+
+
+
 
 
 .footer {

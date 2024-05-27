@@ -72,7 +72,7 @@ nav {
     max-width: 41px;
     padding: 8px;
     background: #ffd64f;
-    border : 0 4px 4 0;
+    border: 0 4px 4 0;
 }
 
 .nav-language {
@@ -122,11 +122,13 @@ nav {
     display: flex;
     overflow-y: hidden;
 }
-.header-img{
+
+.header-img {
     max-width: 100%;
-    mask-image: linear-gradient(to bottom,#000000 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000000 50%, transparent 100%);
 }
-.header-slider a{
+
+.header-slider a {
     position: absolute;
     top: 20%;
     z-index: 1;
@@ -139,17 +141,19 @@ nav {
     cursor: pointer;
 }
 
-.control_next{
-right: 0;
+.control_next {
+    right: 0;
 }
-.box-row{
+
+.box-row {
     display: flex;
     flex-wrap: wrap;
     row-gap: 20px;
     justify-content: space-between;
     margin: 20px 30px;
 }
-.box-col{
+
+.box-col {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -163,20 +167,21 @@ right: 0;
 .box-col a {
     font-size: 14px;
     color: #009999;
-    font-weight: 500;    
+    font-weight: 500;
 }
 
-.header-box{
+.header-box {
     margin-top: -20vw;
 }
 
-.products-slider{
+.products-slider {
     background: #fff;
     margin: 0 30px;
     padding: 20px;
     margin-bottom: 15px;
 }
-.products-slider .products{
+
+.products-slider .products {
 
     display: flex;
     overflow: auto;
@@ -184,24 +189,25 @@ right: 0;
     margin-top: 10px;
 }
 
-.products-slider .products img{
+.products-slider .products img {
     max-width: 200px;
     max-height: 200px;
 }
 
-.products-slider .products ::-webkit-scrollbar{
+.products-slider .products ::-webkit-scrollbar {
     display: none;
 }
+
 /* i change it 13px to 30 */
-.product-slider-with-price{
+.product-slider-with-price {
     background: #fff;
-    margin: 0 30px;  
+    margin: 0 30px;
     padding: 20px;
     margin-bottom: 15px;
 
 }
 
-.product-slider-with-price .products{
+.product-slider-with-price .products {
     display: flex;
     overflow-x: auto;
     gap: 10px;
@@ -209,11 +215,11 @@ right: 0;
 
 }
 
-.product-slider-with-price .products ::-webkit-scrollbar{
+.product-slider-with-price .products ::-webkit-scrollbar {
     display: none;
 }
 
-.products-card{
+.products-card {
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -222,12 +228,12 @@ right: 0;
 
 }
 
-.products-card img{
+.products-card img {
     width: 110px;
     margin: 0 50px;
 }
 
-.products-offer p{
+.products-offer p {
     background: #be0b3b;
     color: #fff;
     display: inline-block;
@@ -236,7 +242,8 @@ right: 0;
     margin: 8px 0;
     font-size: 13px;
 }
-.products-offer span{
+
+.products-offer span {
     color: #be0b3b;
     font-size: 12px;
     font-weight: 500;
@@ -247,7 +254,7 @@ right: 0;
     font-size: 13px;
 }
 
-.products-card h4{
+.products-card h4 {
     color: #525252;
     font-size: 15px;
     font-weight: 400;
@@ -312,3 +319,32 @@ right: 0;
 }
 
 /* Footer from GPT */
+
+
+/* ----------- media query --------------- */
+
+
+@media only screen and (max-width: 900px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .nav-search{
+        order: 7;
+        margin: 15px 0 5px;
+        min-width: 300px;
+    }
+    .box-col{
+        max-width: 48%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .nav-country{
+        display: none;
+    }
+    .nav-language{
+        display: none;
+    }
+    .nav-text{display: none;}
+}

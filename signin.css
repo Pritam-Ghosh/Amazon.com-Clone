@@ -97,7 +97,7 @@ cursor: pointer;
     color: #0066c0;
  cursor: pointer;
 }
-.signin-buttom{
+.signin-bottom{
     width: 350px;
     font-size: 13px;
    color: #737373;
@@ -107,6 +107,41 @@ cursor: pointer;
    justify-content: center;
    gap: 6px;
 }
-.signin-buttom hr{
+.signin-bottom hr{
     width: 110px;
+}
+.sign-signup-btn{
+    width: 350px;
+    height: 30px;
+    font-size: 13px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #c3c3c3;
+    cursor: pointer;
+}
+.sign-signup-btn:hover{
+    background: #f1f1f1;
+}
+footer{
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    margin-top: 20px;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    background: linear-gradient(to button,#f4f4f4,#fff);
+    border-top: 2px solid #ededed;
+    font-size: 12px;
+}
+footer .footer-links{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+footer .footer-links a{
+    text-decoration: none;
+    color: #0066c0;
 }

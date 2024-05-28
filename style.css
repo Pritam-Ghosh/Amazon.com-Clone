@@ -109,6 +109,7 @@ nav {
     background: #232f3e;
     color: #fff;
     font-size: 15px;
+    overflow-x: auto; /* or overflow-x: scroll; */
 }
 
 .nav-bottom div {
@@ -340,11 +341,53 @@ nav {
 }
 
 @media only screen and (max-width: 600px){
-    .nav-country{
+    .nav-country{ 
         display: none;
     }
     .nav-language{
         display: none;
     }
-    .nav-text{display: none;}
+    .nav-text{
+        display: none;
+    }
+    nav-bottom{
+        font-size: 13px;
+        gap: 10px;
+        overflow-x: scroll;
+    }
+    .nav-bottom::-webkit-scrollbar{
+        display: none;
+    }
+    .nav-bottom p{
+        text-wrap: nowrap;
+    }
+    .mobile-user-icon{
+        display: flex !important;
+        flex: 1; /* it will use entire space available in the row */
+        justify-content: flex-end;
+        
+        
+    }
+    .mobile-user-icon img{
+        width: 25px;
+    }
+    .nav-cart h4{
+        display: none;
+    }
+    nav-cart img{
+        width: 25px;
+    }
+    .header-slider a{
+        top: 24%;
+        padding: 2vh 1vw;
+    }
+    .box-col{
+        max-width: 100%;
+        width: 100%;
+    }
+    footer{
+        justify-content: center;
+        flex-direction: column;
+        font-size: 14px;
+    }
 }
